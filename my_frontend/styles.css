@@ -1,0 +1,15 @@
+.plus {
+    position: relative;
+    left: 100px;
+    top: 100px;
+    border: 1px dotted white;
+    width: 3px;
+    height: 3px;
+    background-color: black;
+    box-sizing: border-box;
+    transform: scale(11)
+}
+
+.plus:hover {
+    transform: scale(10)
+}
