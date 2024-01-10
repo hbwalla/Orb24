@@ -1,4 +1,6 @@
-h1 {text-align: center;}
+h1 {
+    text-align: center;
+}
 
 body {
     background-image: radial-gradient(circle, #D3D3D3 2px, transparent 1px),
@@ -7,28 +9,31 @@ body {
     background-size: 50px 50px
 }
 
-.hide {
-    display: none
+.example-parent {
+    border: 2px solid #DFA612;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
 }
 
-.draggable {
-    width: 100px;
+.example-origin {
+    flex-basis: 100%;
+    flex-grow: 1;
     padding: 10px;
-    border: 1px solid #ccc;
-    background-color: #f9f9f9;
+}
+
+.example-draggable {
+    background-color: #4AAE9B;
+    font-weight: normal;
     margin-bottom: 10px;
-    cursor: move;
+    margin-top: 10px;
+    padding: 10px;
 }
 
-.drop-zone {
-    width: 300px;
-    height: 150px;
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9
-}
-
-.drop-zone.over{
-    background-color: #e0e0e0;
+.example-dropzone {
+    background-color: #6DB65B;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
 }

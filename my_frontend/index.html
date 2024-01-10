@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title> Welcome Friend! </title>
-    <link rel = "stylesheet" href = "styles.css">
-</head>
-<body> 
-    <h1> It's been a while, so many miles, and I wonder if I'll ever make it home
-        to the sweet rolling hills of Texas, mother, won't you carry me home! </h1>
-    <script src = "app.js"></script>
-</body>
-<div id = "draggable" draggable = "true" class = "draggable"> Item1 </div>
-<div id = "drop-zone" class = "drop-zone"> Drop items here! </div>
+    <head>
+        <title> Welcome friend! </title>
+        <link rel = "stylesheet" href = "styles.css" />
+    </head>
+    <body>
+        <h1> It's been a while, so many miles, and I wonder if I'll ever make it home
+            to the sweet rolling hills of Texas, mother, won't you carry me home! 
+            <script src = "app.js"></script>
+        </h1>
+        <div class = "example-parent">
+            <div class = "example-origin">
+                <div 
+                    id = "draggable-1"
+                    class = "example-draggable"
+                    draggable = "true"
+                    ondragstart = "onDragStart(event);"
+                > 
+                    Draggable
+                </div>
+            </div>
+            <div 
+                class = "example-dropzone"
+                ondragover = "onDragOver(event);"
+                ondrop = "onDrop(event);"
+            > 
+                Drop Zone 
+            </div>
+        </div>
+        <script src = "app.js"></script>
+    </body>
 </html>
