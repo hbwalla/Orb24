@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width initial-scale = 5 user-scalable = yes" >
         <title> Welcome friend! </title>
         <link rel = "stylesheet" href = "styles.css" />
     </head>
@@ -10,15 +12,17 @@
             <script src = "app.js"></script>
         </h1> -->
         <div class = "example-box" id = "menu-bar"> 
-            <div class = "element-colors" id = "colors"
-                > 
-                    Colors 
-                <div class = "color-option-red" id = "color-red"> </div>
+            <div class = "element-colors" id = "colors"> Colors 
+                <!-- <div class = "color-option-red" id = "color-red"> </div> -->
                 <!-- <div class = "color-option-blue" id = "color-blue"> </div> -->
+                <button class = "color-red" id = "red"> </button>
             </div>
-            <div class = "element-shapes" id = "shapes"> Shapes </div>
+            <div class = "element-shapes" id = "shapes"> Shapes
+                <button class = "shape-square" id = "square"> </button>
+            </div>
         </div>
-
+        <div class = "toolbar" id = "toolbar"> </div>
+<!-- 
         <div class = "example-parent">
             <h1> Awfully amazing ideas </h1>
             <div class = "example-origin">
@@ -63,7 +67,7 @@
             > 
                 Completed 
             </div>
-        </div>
+        </div> -->
         <script src = "app.js"></script>
     </body>
 </html>
