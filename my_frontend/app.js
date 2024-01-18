@@ -28,13 +28,26 @@ function onDrop(event) {
 function onColorButtonClick() {
     alert("Color button clicked!");
 }
-
 const redButton = document.getElementById("red");
 redButton.addEventListener("click", onColorButtonClick);
+
 
 function onShapeButtonClick() {
     alert("Shape button clicked!");
 }
-
 const squareButton = document.getElementById("square");
 squareButton.addEventListener("click", onShapeButtonClick);
+
+
+function onArrowButtonClick() {
+    alert("Arrow button clicked!");
+}
+const arrowButton = document.getElementById("arrow");
+arrowButton.addEventListener("click", onArrowButtonClick);
+
+
+function onArrowButtonClick() {
+    alert("Arrow button clicked!");
+}
+const arrowButtun = document.getElementById("arrow");
+arrowButton.addEventListener("click", onArrowButtonClick);
