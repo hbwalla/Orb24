@@ -1,0 +1,248 @@
+/* // @mixin menuComponents {
+//     $border-radius: 5px;
+//     $position: relative;
+//     $left: 5px;
+//     $width: 215px;
+//     $height: 2.5vh;
+//     $padding: 10px;
+//     $font-family: Arial Bold;
+//     $text-align: center;
+// }
+
+// #class {
+//     @include menuComponents;
+//     border: 2px solid rgb(59, 131, 55);
+//     background-color: rgb(87, 190, 81);
+//     top: 1vh;
+// } */
+
+.class {
+    border: 2px solid rgb(59, 131, 55);
+    background-color: rgb(87, 190, 81);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 1vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.function {
+    border: 2px solid rgb(147, 45, 45);
+    background-color: rgb(240, 69, 69);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 3vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.dictionary {
+    border: 2px solid rgb(47, 82, 146);
+    background-color: rgb(73, 127, 227);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 5vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.property {
+    border: 2px solid rgb(102, 47, 146);
+    background-color: rgb(145, 73, 227);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 7vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.string {
+    border: 2px solid rgba(146, 85, 47, 0.500);
+    background-color: rgba(227, 137, 73, 0.500);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 9vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.boolean {
+    border: 2px solid rgba(54, 47, 146, 0.5);
+    background-color: rgba(73, 78, 227, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 11vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.argument {
+    border: 2px solid rgba(146, 47, 128, 0.5);
+    background-color: rgba(227, 73, 163, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 13vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.integer {
+    border: 2px solid rgba(47, 146, 110, 0.5);
+    background-color: rgba(73, 227, 171, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 15vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.float {
+    border: 2px solid rgba(116, 146, 47, 0.5);
+    background-color: rgba(183, 227, 73, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 17vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.list {
+    border: 2px solid rgba(146, 133, 47, 0.5);
+    background-color: rgba(227, 212, 73, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 19vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.array {
+    border: 2px solid rgba(146, 57, 47, 0.5);
+    background-color: rgba(227, 86, 73, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 21vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.set {
+    border: 2px solid rgba(92, 47, 146, 0.5);
+    background-color: rgba(147, 73, 227, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 23vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.tuple {
+    border: 2px solid rgba(47, 90, 146, 0.5);
+    background-color: rgba(73, 145, 227, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 25vh;
+    width: 215px;
+    height: 2vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+/* // #red-ui-drop-target {
+//     position: absolute;
+//     top: 0; bottom: 0;
+//     left: 0; right: 0;
+//     background: blue;
+//     display:table;
+//     width: 100%;
+//     height: 100%;
+//     display: none;
+//     z-index:100;
+//     div {
+//         pointer-events: none;
+//         display: table-cell;
+//         vertical-align: middle;
+//         text-align: center;
+//         font-size: 40px;
+//         color: orange;
+//         i {
+//             pointer-events: none;
+//             font-size: 80px;
+//         }
+//     }
+// }
+
+// #red-ui-image-drop-target {
+//     position: absolute;
+//     top: 0; bottom: 0;
+//     left: 0; right: 0;
+//     background: white;
+//     display:table;
+//     width: 100%;
+//     height: 100%;
+//     display: none;
+//     z-index:100;
+//     div {
+//         pointer-events: none;
+//         display: table-cell;
+//         vertical-align: middle;
+//         text-align: center;
+//         font-size: 40px;
+//         color: green;
+//         i {
+//             pointer-events: none;
+//             font-size: 80px;
+//         }
+//     }
+// }
+ */

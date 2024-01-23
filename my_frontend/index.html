@@ -2,38 +2,36 @@
 <html>
     <head>
         <meta charset = "UTF-8">
-        <meta name = "viewport" content = "width=device-width initial-scale = 5 user-scalable = yes" >
+        <meta name = "viewport" content = "width=device-width initial-scale = 1">
         <title> Welcome friend! </title>
-        <link rel = "stylesheet" href = "styles.css" />
+        <!-- <link rel = "stylesheet" href = "menu-components.scss"/> -->
     </head>
-    <body>
+    <body id="c">
+        <!-- <script src = "styles.css"></script> -->
         <!-- <h1> It's been a while, so many miles, and I wonder if I'll ever make it home
             to the sweet rolling hills of Texas, mother, won't you carry me home! 
             <script src = "app.js"></script>
         </h1> -->
-        <div class = "example-box" id = "menu-bar">
-            <div class = "element-colors" id = "colors"> Colors 
-                <!-- <div class = "color-option-red" id = "color-red"> </div> -->
-                <!-- <div class = "color-option-blue" id = "color-blue"> </div> -->
-                <button class = "color-red" id = "red"> </button>
-            </div>
-            <div class = "element-shapes" id = "shapes"> Shapes
-                <button class = "shape-square" id = "square"> </button>
-            </div>
-            <div class = "element-connectors" id = "connectors"> Connectors 
-                <!-- <button class = "connector-arrow right" id = "arrow"> </button> -->
-                <!-- <div class = "arrow-right"> </div> -->
-                <!-- <div class="info"><a href="http://www.bay42.io" class="arrow1">
-                    Learn about our technology<span class="arrow-right"></span>
-                  </a></div> -->
-                  <div class = "arrow", id = "arrow">
-                    <div class = "line"></div>
-                    <div class = "point"></div>
-                  </div>
-                  
-            </div>
-        </div>
+        <link rel = "stylesheet" href = "page-layout.css"/>
+        <div class = "menubar" id = "menu-bar">
+            <link rel = "stylesheet" href = "menu-components.css"/>
+            <div class = "class" id = "option-class"> Class </div>
+            <div class = "function" id = "option-function"> Function </div>
+            <div class = "dictionary" id = "option-dictionary"> Dictionary </div>
+            <div class = "property" id = "option-property"> Property </div>
+            <div class = "string" id = "option-string"> String </div>
+            <div class = "boolean" id = "option-boolean"> Boolean </div>
+            <div class = "argument" id = "option-argument"> Argument </div>
+            <div class = "integer" id = "option-integer"> Integer </div>
+            <div class = "float" id = "option-float"> Float </div>
+            <div class = "list" id = "option-list"> List </div>
+            <div class = "array" id = "option-array"> Array </div>
+            <div class = "set" id = "option-set"> Set </div>
+            <div class = "tuple" id = "option-tuple"> Tuple </div>
         <div class = "toolbar" id = "toolbar"> </div>
+            <link rel = "stylesheet" href = "toolbar-components.css">
+            <div class = "tooltip" id = "undo"> </div>
+        <!-- <div class = "red-ui-drop-target"> </div> -->
 
 <!-- 
         <div class = "example-parent">
@@ -81,6 +79,5 @@
                 Completed 
             </div>
         </div> -->
-        <script src = "app.js"></script>
     </body>
 </html>

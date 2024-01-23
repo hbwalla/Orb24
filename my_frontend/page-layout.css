@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(32, 32, 32);
+    width: 100vh;
+    height: 100vh;
+}
+
+.menubar {
+    box-shadow: 5px 5px 4px black;
+    background-color: rgb(32, 32, 32);
+    border: 2px solid rgba(255, 103, 21, 0.997);
+    border-radius: 10px;
+    top: 1vh;
+    position: fixed;
+    width: 250px;
+    height: 95vh;
+    padding: 10px;
+    z-index: 9;
+}
+
+.toolbar {
+    border: 2px solid rgba(255, 103, 21, 0.997);
+    box-shadow: 5px 5px 4px black;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    position: fixed;
+    top: 1vh;
+    left: 40vh;
+    width: 700px;
+    height: 4vh;
+    padding: 10px;
+    z-index: 9
+}

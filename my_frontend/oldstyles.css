@@ -1,0 +1,341 @@
+/* html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0px;
+    overflow: hidden;
+    background-color: rgb(32, 32, 32);
+    z-index: 1;
+} */
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(32, 32, 32);
+    z-index: 0;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* body {
+    background-image: radial-gradient(circle, #D3D3D3 2px, transparent 1px),
+                      radial-gradient(circle, #D3D3D3 2px, transparent 1px);
+    background-position: 25px 25px;
+    background-size: 50px 50px
+/* } */
+
+body {
+    background-color: rgb(32, 32, 32);
+    width: 100vh;
+    height: 100vh;
+}
+
+/* .example-parent {
+    border: 2px solid #DFA612;
+    color: black;
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    position: relative;
+    background-color: #D3D3D3;
+    left: 500px;
+    top: 10px;
+} */
+
+/* .example-origin {
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+} */
+
+/* .example-draggable {
+    background-color: #4AAE9B;
+    font-weight: normal;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 10px;
+} */
+
+/* .example-dropzone {
+    background-color: #6DB65B;
+    flex-basis: 100%;
+    flex-grow: 1;
+    padding: 10px;
+} */
+
+.menubar {
+    box-shadow: 5px 5px 4px black;
+    background-color: rgb(32, 32, 32);
+    border: 2px solid rgba(255, 103, 21, 0.997);
+    border-radius: 10px;
+    top: 1vh;
+    position: fixed;
+    width: 250px;
+    height: 95vh;
+    padding: 10px;
+    z-index: 9;
+}
+
+/* .element-colors {
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+    position: relative;
+    left: 5px;
+    top: .5vh;
+    width: 270px;
+    height: 10vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: white;
+    text-align: center;
+} */
+
+/* .element-shapes {
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+    position: relative;
+    left: 5px;
+    width: 270px;
+    height: 12vh;
+    top: 3vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: white;
+    text-align: center;
+} */
+
+/* .element-connectors {
+    background-color: rgb(52, 52, 52);
+    border-radius: 10px;
+    position: relative;
+    left: 5px;
+    width: 270px;
+    height: 12vh;
+    top: 5.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: white;
+    text-align: center;
+} */
+
+.toolbar {
+    border: 2px solid rgba(255, 103, 21, 0.997);
+    box-shadow: 5px 5px 4px black;
+    background-color: rgb(32, 32, 32);
+    border-radius: 10px;
+    position: fixed;
+    top: 1vh;
+    left: 40vh;
+    width: 700px;
+    height: 4vh;
+    padding: 10px;
+    z-index: 9
+}
+
+.class {
+    border: 2px solid rgb(59, 131, 55);
+    background-color: rgb(87, 190, 81);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 1vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.function {
+    border: 2px solid rgb(147, 45, 45);
+    background-color: rgb(240, 69, 69);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 3vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.dictionary {
+    border: 2px solid rgb(47, 82, 146);
+    background-color: rgb(73, 127, 227);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 5vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.property {
+    border: 2px solid rgb(102, 47, 146);
+    background-color: rgb(145, 73, 227);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 7vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.string {
+    border: 2px solid rgba(146, 85, 47, 0.500);
+    background-color: rgba(227, 137, 73, 0.500);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 9vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.boolean {
+    border: 2px solid rgba(54, 47, 146, 0.5);
+    background-color: rgba(73, 78, 227, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 11vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.argument {
+    border: 2px solid rgba(146, 47, 128, 0.5);
+    background-color: rgba(227, 73, 163, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 13vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.integer {
+    border: 2px solid rgba(47, 146, 110, 0.5);
+    background-color: rgba(73, 227, 171, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 15vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.float {
+    border: 2px solid rgba(116, 146, 47, 0.5);
+    background-color: rgba(183, 227, 73, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 17vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.list {
+    border: 2px solid rgba(146, 133, 47, 0.5);
+    background-color: rgba(227, 212, 73, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 19vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+.array {
+    border: 2px solid rgba(146, 57, 47, 0.5);
+    background-color: rgba(227, 86, 73, 0.5);
+    border-radius: 5px;
+    position: relative;
+    left: 5px;
+    top: 21vh;
+    width: 215px;
+    height: 2.5vh;
+    padding: 10px;
+    font-family: Arial Bold;
+    text-align: center;
+}
+
+/* .color-red {
+    border: 2px solid white;
+    background-color: red;
+    border-radius: 5px;
+    position: relative;
+    right: 145px;
+    top: 3vh;
+    width: 5px;
+    height: .7vh;
+    padding: 10px;
+}
+
+.shape-square {
+    background-color: rgb(87, 124, 175);
+    border: 2px solid rgb(87, 124, 175);
+    position: relative;
+    right: 145px;
+    top: 3vh;
+    width: 5px;
+    height: .7vh;
+    padding: 10px;
+
+} */
+
+.arrow {
+    width: 40px;
+    margin-left: 10px;
+    margin-top: 0px;
+}
+
+/* Note: width of line + border left of point = width of arrow or else it doesn't work */
+.line {
+    margin-top: 14px;
+    width: 20px;
+    background: rgb(87, 124, 175);
+    height: 5px;
+    float: left;
+  }
+  
+.point {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid rgb(87, 124, 175);
+    float: right;
+    margin-top: 6px
+}
+
