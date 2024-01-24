@@ -1,30 +1,12 @@
-/* // @mixin menuComponents {
-//     $border-radius: 5px;
-//     $position: relative;
-//     $left: 5px;
-//     $width: 215px;
-//     $height: 2.5vh;
-//     $padding: 10px;
-//     $font-family: Arial Bold;
-//     $text-align: center;
-// }
-
-// #class {
-//     @include menuComponents;
-//     border: 2px solid rgb(59, 131, 55);
-//     background-color: rgb(87, 190, 81);
-//     top: 1vh;
-// } */
-
 .class {
     border: 2px solid rgb(59, 131, 55);
     background-color: rgb(87, 190, 81);
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 1vh;
+    top: 5px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -36,9 +18,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 3vh;
+    top: 20px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -50,9 +32,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 5vh;
+    top: 35px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -64,9 +46,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 7vh;
+    top: 50px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -78,9 +60,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 9vh;
+    top: 65px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -92,9 +74,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 11vh;
+    top: 80px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -106,9 +88,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 13vh;
+    top: 95px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -120,9 +102,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 15vh;
+    top: 110px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -134,9 +116,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 17vh;
+    top: 125px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -148,9 +130,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 19vh;
+    top: 140px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -162,9 +144,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 21vh;
+    top: 155px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -176,9 +158,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 23vh;
+    top: 170px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;
@@ -190,9 +172,9 @@
     border-radius: 5px;
     position: relative;
     left: 5px;
-    top: 25vh;
+    top: 185px;
     width: 215px;
-    height: 2vh;
+    height: 15px;
     padding: 10px;
     font-family: Arial Bold;
     text-align: center;

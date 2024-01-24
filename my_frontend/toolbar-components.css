@@ -1,6 +1,44 @@
 .undo {
     background-color: rgb(64, 64, 64);
-    position: relative;
+    border-radius: 5px;
+    position: fixed;
     color: black;
-
+    width: 40px;
+    height: 15px;
+    padding: 10px;
+    left: 945px;
+    bottom: 685px;
+    text-align: center;
+    font-family: "Arial Bold";
+    z-index: 10;
 }
+
+.version-history {
+    background-color: rgb(64, 64, 64);
+    border-radius: 5px;
+    position: fixed;
+    color: black;
+    width: 165px;
+    height: 15px;
+    padding: 10px;
+    left: 745px;
+    bottom: 685px;
+    text-align: center;
+    font-family: "Arial Bold";
+    z-index: 10;
+}
+
+/* .settings {
+    background-color: rgb(64, 64, 64);
+    border-radius: 5px;
+    position: fixed;
+    color: black;
+    width: 120px;
+    height: 15px;
+    padding: 10px;
+    left: 745px;
+    bottom: 685px;
+    text-align: center;
+    font-family: "Arial Bold";
+    z-index: 10;
+} */

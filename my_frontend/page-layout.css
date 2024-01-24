@@ -9,10 +9,10 @@ body {
     background-color: rgb(32, 32, 32);
     border: 2px solid rgba(255, 103, 21, 0.997);
     border-radius: 10px;
-    top: 1vh;
+    top: 10px;
     position: fixed;
     width: 250px;
-    height: 95vh;
+    height: 698px;
     padding: 10px;
     z-index: 9;
 }
@@ -23,10 +23,10 @@ body {
     background-color: rgb(32, 32, 32);
     border-radius: 10px;
     position: fixed;
-    top: 1vh;
-    left: 40vh;
+    top: 10px;
+    left: 300px;
     width: 700px;
-    height: 4vh;
+    height: 40px;
     padding: 10px;
     z-index: 9
 }
