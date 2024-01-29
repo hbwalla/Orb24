@@ -28,17 +28,32 @@
     z-index: 10;
 }
 
-/* .settings {
+.open-file {
     background-color: rgb(64, 64, 64);
     border-radius: 5px;
     position: fixed;
     color: black;
-    width: 120px;
+    width: 75px;
     height: 15px;
     padding: 10px;
-    left: 745px;
+    left: 510px;
     bottom: 685px;
     text-align: center;
     font-family: "Arial Bold";
     z-index: 10;
-} */
+}
+
+.export-file {
+    background-color: rgb(64, 64, 64);
+    border-radius: 5px;
+    position: fixed;
+    color: black;
+    width: 90px;
+    height: 15px;
+    padding: 10px;
+    left: 620px;
+    bottom: 685px;
+    text-align: center;
+    font-family: "Arial Bold";
+    z-index: 10;
+}
