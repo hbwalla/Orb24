@@ -1,182 +1,211 @@
 .class {
-    border: 2px solid rgb(59, 131, 55);
-    background-color: rgb(87, 190, 81);
+    /* border: 2px solid rgb(59, 131, 55); */
+    /* border: 2px solid #626d24; */
+    /* background-color: rgb(87, 190, 81); */
+    background-color: #bcd500;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 5px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 25px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
+    cursor: grab;
 }
 
 .function {
-    border: 2px solid rgb(147, 45, 45);
-    background-color: rgb(240, 69, 69);
+    /* border: 2px solid rgb(147, 45, 45); */
+    /* background-color: rgb(240, 69, 69); */
+    background-color: #ff3700;
+    /* border: 2px solid #ff4200; */
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 20px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 75px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .dictionary {
-    border: 2px solid rgb(47, 82, 146);
-    background-color: rgb(73, 127, 227);
+    /* border: 2px solid rgb(47, 82, 146);
+    background-color: rgb(73, 127, 227); */
+    background-color: #00719a;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 35px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 125px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .property {
-    border: 2px solid rgb(102, 47, 146);
-    background-color: rgb(145, 73, 227);
+    /* border: 2px solid rgb(102, 47, 146);
+    background-color: rgb(145, 73, 227); */
+    background-color: #682a6f;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 50px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 175px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .string {
-    border: 2px solid rgba(146, 85, 47, 0.500);
-    background-color: rgba(227, 137, 73, 0.500);
+    /* border: 2px solid rgba(146, 85, 47, 0.500);
+    background-color: rgba(227, 137, 73, 0.500); */
+    background-color: #db9700;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 65px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 225px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .boolean {
-    border: 2px solid rgba(54, 47, 146, 0.5);
-    background-color: rgba(73, 78, 227, 0.5);
+    /* border: 2px solid rgba(54, 47, 146, 0.5);
+    background-color: rgba(73, 78, 227, 0.5); */
+    background-color: #003f7d;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 80px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 275px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .argument {
-    border: 2px solid rgba(146, 47, 128, 0.5);
-    background-color: rgba(227, 73, 163, 0.5);
+    /* border: 2px solid rgba(146, 47, 128, 0.5);
+    background-color: rgba(227, 73, 163, 0.5); */
+    background-color: #b00b14;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 95px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 325px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .integer {
-    border: 2px solid rgba(47, 146, 110, 0.5);
-    background-color: rgba(73, 227, 171, 0.5);
+    /* border: 2px solid rgba(47, 146, 110, 0.5);
+    background-color: rgba(73, 227, 171, 0.5); */
+    background-color: #3ba589;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 110px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 375px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .float {
-    border: 2px solid rgba(116, 146, 47, 0.5);
-    background-color: rgba(183, 227, 73, 0.5);
+    /* border: 2px solid rgba(116, 146, 47, 0.5);
+    background-color: rgba(183, 227, 73, 0.5); */
+    background-color: #a0b18a;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 125px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 425px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .list {
-    border: 2px solid rgba(146, 133, 47, 0.5);
-    background-color: rgba(227, 212, 73, 0.5);
+    /* border: 2px solid rgba(146, 133, 47, 0.5);
+    background-color: rgba(227, 212, 73, 0.5); */
+    background-color: #626d24;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 140px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 475px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .array {
-    border: 2px solid rgba(146, 57, 47, 0.5);
-    background-color: rgba(227, 86, 73, 0.5);
+    /* border: 2px solid rgba(146, 57, 47, 0.5);
+    background-color: rgba(227, 86, 73, 0.5); */
+    background-color: #9b3a4b;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 155px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 525px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .set {
-    border: 2px solid rgba(92, 47, 146, 0.5);
-    background-color: rgba(147, 73, 227, 0.5);
+    /* border: 2px solid rgba(92, 47, 146, 0.5);
+    background-color: rgba(147, 73, 227, 0.5); */
+    background-color: #ffb25e;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 170px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 575px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 
 .tuple {
-    border: 2px solid rgba(47, 90, 146, 0.5);
-    background-color: rgba(73, 145, 227, 0.5);
+    /* border: 2px solid rgba(47, 90, 146, 0.5);
+    background-color: rgba(73, 145, 227, 0.5); */
+    background-color: #00484d;
     border-radius: 5px;
-    position: relative;
-    left: 5px;
-    top: 185px;
-    width: 215px;
+    position: fixed;
+    left: 25px;
+    top: 625px;
+    width: 100px;
     height: 15px;
     padding: 10px;
     font-family: Arial Bold;
+    color: #151514;
     text-align: center;
 }
 

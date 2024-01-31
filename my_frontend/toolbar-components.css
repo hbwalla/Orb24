@@ -1,59 +1,80 @@
 .undo {
-    background-color: rgb(64, 64, 64);
+    /* background-color: rgb(64, 64, 64); */
+    background-color: #7C7C7B;
     border-radius: 5px;
     position: fixed;
     color: black;
     width: 40px;
     height: 15px;
     padding: 10px;
-    left: 945px;
+    left: 780px;
     bottom: 685px;
     text-align: center;
     font-family: "Arial Bold";
+    color: #151514;
     z-index: 10;
 }
 
 .version-history {
-    background-color: rgb(64, 64, 64);
+    background-color: #7C7C7B;
     border-radius: 5px;
     position: fixed;
     color: black;
     width: 165px;
     height: 15px;
     padding: 10px;
-    left: 745px;
+    left: 580px;
     bottom: 685px;
     text-align: center;
     font-family: "Arial Bold";
+    color: #151514;
     z-index: 10;
 }
 
 .open-file {
-    background-color: rgb(64, 64, 64);
+    background-color: #7C7C7B;
     border-radius: 5px;
     position: fixed;
     color: black;
     width: 75px;
     height: 15px;
     padding: 10px;
-    left: 510px;
+    left: 470px;
     bottom: 685px;
     text-align: center;
     font-family: "Arial Bold";
+    color: #151514;
     z-index: 10;
 }
 
 .export-file {
-    background-color: rgb(64, 64, 64);
+    background-color: #7C7C7B;
     border-radius: 5px;
     position: fixed;
     color: black;
     width: 90px;
     height: 15px;
     padding: 10px;
-    left: 620px;
+    left: 345px;
     bottom: 685px;
     text-align: center;
     font-family: "Arial Bold";
+    color: #151514;
+    z-index: 10;
+}
+
+.add-connector {
+    background-color: #7C7C7B;
+    border-radius: 5px;
+    position: fixed;
+    color: black;
+    width: 120px;
+    height: 15px;
+    padding: 10px;
+    left: 190px;
+    bottom: 685px;
+    text-align: center;
+    font-family: "Arial Bold";
+    color: #151514;
     z-index: 10;
 }
