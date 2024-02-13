@@ -1,7 +1,4 @@
 .class {
-    /* border: 2px solid rgb(59, 131, 55); */
-    /* border: 2px solid #626d24; */
-    /* background-color: rgb(87, 190, 81); */
     background-color: #bcd500;
     border-radius: 5px;
     position: fixed;
@@ -14,13 +11,11 @@
     color: #151514;
     text-align: center;
     cursor: grab;
+    z-index: 10;
 }
 
 .function {
-    /* border: 2px solid rgb(147, 45, 45); */
-    /* background-color: rgb(240, 69, 69); */
     background-color: #ff3700;
-    /* border: 2px solid #ff4200; */
     border-radius: 5px;
     position: fixed;
     left: 25px;
@@ -31,11 +26,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .dictionary {
-    /* border: 2px solid rgb(47, 82, 146);
-    background-color: rgb(73, 127, 227); */
     background-color: #00719a;
     border-radius: 5px;
     position: fixed;
@@ -47,11 +42,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .property {
-    /* border: 2px solid rgb(102, 47, 146);
-    background-color: rgb(145, 73, 227); */
     background-color: #682a6f;
     border-radius: 5px;
     position: fixed;
@@ -63,11 +58,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .string {
-    /* border: 2px solid rgba(146, 85, 47, 0.500);
-    background-color: rgba(227, 137, 73, 0.500); */
     background-color: #db9700;
     border-radius: 5px;
     position: fixed;
@@ -79,11 +74,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .boolean {
-    /* border: 2px solid rgba(54, 47, 146, 0.5);
-    background-color: rgba(73, 78, 227, 0.5); */
     background-color: #003f7d;
     border-radius: 5px;
     position: fixed;
@@ -95,11 +90,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .argument {
-    /* border: 2px solid rgba(146, 47, 128, 0.5);
-    background-color: rgba(227, 73, 163, 0.5); */
     background-color: #b00b14;
     border-radius: 5px;
     position: fixed;
@@ -111,11 +106,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .integer {
-    /* border: 2px solid rgba(47, 146, 110, 0.5);
-    background-color: rgba(73, 227, 171, 0.5); */
     background-color: #3ba589;
     border-radius: 5px;
     position: fixed;
@@ -127,11 +122,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .float {
-    /* border: 2px solid rgba(116, 146, 47, 0.5);
-    background-color: rgba(183, 227, 73, 0.5); */
     background-color: #a0b18a;
     border-radius: 5px;
     position: fixed;
@@ -143,11 +138,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .list {
-    /* border: 2px solid rgba(146, 133, 47, 0.5);
-    background-color: rgba(227, 212, 73, 0.5); */
     background-color: #626d24;
     border-radius: 5px;
     position: fixed;
@@ -159,11 +154,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .array {
-    /* border: 2px solid rgba(146, 57, 47, 0.5);
-    background-color: rgba(227, 86, 73, 0.5); */
     background-color: #9b3a4b;
     border-radius: 5px;
     position: fixed;
@@ -175,11 +170,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .set {
-    /* border: 2px solid rgba(92, 47, 146, 0.5);
-    background-color: rgba(147, 73, 227, 0.5); */
     background-color: #ffb25e;
     border-radius: 5px;
     position: fixed;
@@ -191,11 +186,11 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 .tuple {
-    /* border: 2px solid rgba(47, 90, 146, 0.5);
-    background-color: rgba(73, 145, 227, 0.5); */
     background-color: #00484d;
     border-radius: 5px;
     position: fixed;
@@ -207,6 +202,8 @@
     font-family: Arial Bold;
     color: #151514;
     text-align: center;
+    cursor: grab;
+    z-index: 10;
 }
 
 /* // #red-ui-drop-target {

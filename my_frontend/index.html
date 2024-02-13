@@ -5,25 +5,24 @@
         <meta name = "viewport" content = "width=device-width initial-scale = 1">
         <title> Welcome friend! </title>
     </head>
-    <body id = "body">
+    <body id = "body" class = "body">
         <!-- <script src = "styles.css"></script> -->
         <!-- <h1> It's been a while, so many miles, and I wonder if I'll ever make it home
             to the sweet rolling hills of Texas, mother, won't you carry me home! 
             <script src = "app.js"></script>
         </h1> -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="/js/plugins/jquery.panzoom.js"></script>
         <script src = "app.js"> </script>
         <link rel = "stylesheet" href = "page-layout.css"/>
-        <div class = "container" id = "container" 
-            ondragover = "onDragOver(event);"
-            ondrop = "onDrop(event);"> </div>
-            <!-- <div class = "box" id = "box"> </div> -->
-        <div class = "menubar" id = "menu-bar" 
-            ondragOver = "onDragOver(event);">
+        <!-- <script src = "pan-zoom.js"></script> -->
+        <div id = "container"> </div>
+            <div id = "box" class = "box"> hi </div>
+        <div class = "menubar" id = "menu-bar"> </div>
+            <script src = "menu-functions.js"> </script>
             <link rel = "stylesheet" href = "menu-components.css"/>
-            <div class = "class" id = "option-class"
-                 draggable = true
-                 ondragstart = "onDragStart(event);"
-                 ondragover = "onDragOver(event);"> Class </div>
+            <div class = "class" id = "option-class"> Class </div>
             <div class = "function" id = "option-function"> Function </div>
             <div class = "dictionary" id = "option-dictionary"> Dictionary </div>
             <div class = "property" id = "option-property"> Property </div>
