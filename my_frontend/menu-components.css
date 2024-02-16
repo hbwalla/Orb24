@@ -206,6 +206,216 @@
     z-index: 10;
 }
 
+/* --- */
+
+.class-clone {
+    background-color: #bcd500;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.function-clone {
+    background-color: #ff3700;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.dictionary-clone {
+    background-color: #00719a;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.property-clone {
+    background-color: #682a6f;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.string-clone {
+    background-color: #db9700;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.boolean-clone {
+    background-color: #003f7d;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.argument-clone {
+    background-color: #b00b14;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.integer-clone {
+    background-color: #3ba589;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.float-clone {
+    background-color: #a0b18a;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 425px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.list-clone {
+    background-color: #626d24;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.array-clone {
+    background-color: #9b3a4b;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.set-clone {
+    background-color: #ffb25e;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
+.tuple-clone {
+    background-color: #00484d;
+    border-radius: 5px;
+    position: absolute;
+    left: 200px;
+    top: 100px;
+    width: 100px;
+    height: 15px;
+    padding: 10px;
+    font-family: Arial Bold;
+    color: #151514;
+    text-align: center;
+    cursor: grab;
+    z-index: 7;
+}
+
 /* // #red-ui-drop-target {
 //     position: absolute;
 //     top: 0; bottom: 0;

@@ -1,13 +1,18 @@
 $(function() {
-    $("#option-class").draggable({
-        revert: "invalid",
-        stack: ".draggable",
-        helper: "clone"
-    });
+    // $("#option-class").draggable({})
+    //     revert: "invalid",
+    //     stack: ".draggable",
+    //     helper: "clone"
+    // });
     $("#option-class").click(function(event) {
-        alert("hello!");
+        // alert("hello!");
+        $(".container").prepend(".class-clone");
         event.stopImmediatePropagation();
     });
+});
+
+$(function() {
+    $("#option-class-clone").draggable({});
 });
 
 $(function() {

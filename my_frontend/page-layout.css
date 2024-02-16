@@ -11,7 +11,7 @@ body {
     height: 100%;
     z-index: 1;
     background: #282727;
-    display: flex;
+    /* display: flex; */
     justify-content: center;
     align-items: center;
 }
