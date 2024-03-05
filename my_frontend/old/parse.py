@@ -1,5 +1,4 @@
-import json
-import numpy as np
+# import xml.etree.ElementTree as ET
 
 pathName = "/Users/haileywallace/desktop/Brain Child"
 fileName = "/linear_algebra.py"
@@ -64,8 +63,8 @@ for i in range(len(classLineNumber)):
 
 # gathering functions
 
-functionLineNumber = []
-functionException = []
+functionLineNumber = [] # where the 'def's are
+functionException = [] # where the '):'s are
 scrapDict2 = dict()
 functionDict = dict()
 
@@ -82,6 +81,8 @@ for i in range(len(contents)):
     if ("):" or ") :")  in contents[i]:
         functionException.append(i)
 
+
+# maybe update these for if first spacing is 2 spaces and not 4
 for i in range(len(functionLineNumber)):
     if "def" in contents[functionLineNumber[i]]:
         readFunctionLines = []
@@ -103,6 +104,7 @@ for i in range(len(functionLineNumber)):
     if "def" not in contents[functionLineNumber[i]]:
         pass
 
+
 for i in range(len(functionLineNumber)):
     lines = scrapDict2["function" + str(i)]["line"]
     myRange = range(scrapDict2["function" + str(i)]["begin"], scrapDict2["function" + str(i)]["end"], 1)
@@ -114,22 +116,26 @@ for i in range(len(functionLineNumber)):
     if functionDict["function" + str(i)]["indent"] == '':
         functionDict["function" + str(i)]["indent"] = 0
 
-# commonFunctionList = []
-# differentFunctionList = []
-
-# for i in range(len(functionException)):
-#     if functionException[i] != functionLineNumber[i]:
-#         differentFunctionList.append(functionException[i])
-#     if functionException[i] == functionLineNumber[i]:
-#         commonFunctionList.append(functionException[i])
 
 for i in functionDict:
     if functionDict[i]["name"] == '__init__':
         functionDict[i]["status"] = 'classInit'
     else:
-        functionDict[i]["status"] = 'lone'
+        functionDict[i]["status"] = 'lone' # this will be updated later if function is nested
 
 pairs = []
+
+# if # is after the colon, it's fine, but if it's before... problematic. might have to make new list...
+
+print(functionLineNumber)
+newFLN = []
+
+for i in functionLineNumber:
+    if ("# def" not in contents[i]) or ("#def" not in contents[i]):
+        newFLN.append(i)
+
+print(newFLN)
+
 
 if len(functionException) == len(functionLineNumber):
     for i, j in zip(functionLineNumber, functionException):
@@ -141,50 +147,53 @@ else:
 pairDict = dict()
 
 for i in range(len(pairs)):
-    pairDict["pair" + str(i)] = {"range": '', "begin": '', "end": ''}
+    pairDict["pair" + str(i)] = {"range": '', "begin": '', "end": '', "string": ''}
     pairDict["pair" + str(i)]["range"] = range(pairs[i][0], pairs[i][1] + 1, 1)
-
-# print(pairDict)
 
 lastDict = dict()
 
 for i in range(len(pairs)):
     tempRange = pairDict["pair" + str(i)]["range"]
+    indices = []
+    lineString = ''
     for j in tempRange:
-        myList = []
-        for k in contents[j]:
-            myList.append(k)
-    # conacanate list into one string and remove all unnecessary stuff like "def"!
-    myList.strip("\n")
-    myList.strip("\\")
-    print(myList)
+        indices.append(j)
+    for k in indices:
+        lineString += contents[k]
+    pairDict["pair" + str(i)]["string"] = lineString
 
-# for i in range(len(pairs)):
-#     tempRange = pairDict["pair" + str(i)]["range"]
-#     tempLines = []
-#     for j in tempRange:
-#         tempLines.append(contents[j])
-#         tempCharacters = []
-#         tempDict = dict()
 
-#         for k in range(len(contents[j])):
-#             if contents[j][k] == "(":
-#                 # pairDict["pair" + str(i)]["begin"] = k + 1
-#                 tempDict["line" + str()]
-#             if contents[j][k] == ")" and contents[j][k + 1] == ":":
-#                 pairDict["pair" + str(i)]["end"] = k - 1
-#             print(range(pairDict))
+for i in range(len(pairs)):
+    if type(pairDict["pair" + str(i)]["string"]) == str:
+        testList = []
+        string = pairDict["pair" + str(i)]["string"]
+        for j in string:
+            testList.append(j)
+            if k == ' ':
+                testList.remove(k)
+        for k in testList:
+            if k == '\n':
+                testList.remove(k)
+        for k in testList:
+            if k == '\\':
+                testList.remove(k)
+        for k in testList:
+            if k == ':':
+                testList.remove(k)
+        nums = []
+        for k in range(len(testList)):
+            if testList[k] == '(':
+                nums.append(k)
+            if testList[k] == ')':
+                nums.append(k)
+        for l in range(len(nums)):
+            if len(nums) == 2:
+                start = nums[0]
+                end = nums[1]
+        inputRange = range(start, end, 1)
+        input = ''
+        for i in inputRange:
+            if (testList[i] != ' ') and (testList[i] != '('):
+                input += testList[i]
 
-    
-        # if "(" in contents[j]:
-        #     print(j)
 
-        
-# for i in range(len(functionLineNumber)):
-#     specLines = range(pairs[i][0], pairs[i][1], 1)
-#     print(specLines)
-    # if "def" in contents[functionLineNumber[i]]:
-    #     readFunctionLines = []
-    #     for j in contents[functionLineNumber[i]]:
-    #         readFunctionLines.append(j)
-        

@@ -1,0 +1,306 @@
+Created by PLY version 3.11 (http://www.dabeaz.com/ply)
+
+Grammar
+
+Rule 0     S' -> program
+Rule 1     program -> declarations
+Rule 2     declarations -> declarations class_declaration
+Rule 3     declarations -> declarations function_declaration
+Rule 4     declarations -> empty
+Rule 5     class_declaration -> CLASS IDENTIFIER COLON NEWLINE INDENT declarations DEDENT
+Rule 6     function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT
+Rule 7     parameters -> parameters COMMA IDENTIFIER
+Rule 8     parameters -> IDENTIFIER
+Rule 9     parameters -> empty
+Rule 10    empty -> <empty>
+
+Terminals, with rules where they appear
+
+CLASS                : 5
+COLON                : 5 6
+COMMA                : 7
+DEDENT               : 5 6
+DEF                  : 6
+IDENTIFIER           : 5 6 7 8
+INDENT               : 5 6
+LPAREN               : 6
+NEWLINE              : 5 6
+RPAREN               : 6
+error                : 
+
+Nonterminals, with rules where they appear
+
+class_declaration    : 2
+declarations         : 1 2 3 5 6
+empty                : 4 9
+function_declaration : 3
+parameters           : 6 7
+program              : 0
+
+Parsing method: LALR
+
+state 0
+
+    (0) S' -> . program
+    (1) program -> . declarations
+    (2) declarations -> . declarations class_declaration
+    (3) declarations -> . declarations function_declaration
+    (4) declarations -> . empty
+    (10) empty -> .
+
+    CLASS           reduce using rule 10 (empty -> .)
+    DEF             reduce using rule 10 (empty -> .)
+    $end            reduce using rule 10 (empty -> .)
+
+    program                        shift and go to state 1
+    declarations                   shift and go to state 2
+    empty                          shift and go to state 3
+
+state 1
+
+    (0) S' -> program .
+
+
+
+state 2
+
+    (1) program -> declarations .
+    (2) declarations -> declarations . class_declaration
+    (3) declarations -> declarations . function_declaration
+    (5) class_declaration -> . CLASS IDENTIFIER COLON NEWLINE INDENT declarations DEDENT
+    (6) function_declaration -> . DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT
+
+    $end            reduce using rule 1 (program -> declarations .)
+    CLASS           shift and go to state 6
+    DEF             shift and go to state 7
+
+    class_declaration              shift and go to state 4
+    function_declaration           shift and go to state 5
+
+state 3
+
+    (4) declarations -> empty .
+
+    CLASS           reduce using rule 4 (declarations -> empty .)
+    DEF             reduce using rule 4 (declarations -> empty .)
+    $end            reduce using rule 4 (declarations -> empty .)
+    DEDENT          reduce using rule 4 (declarations -> empty .)
+
+
+state 4
+
+    (2) declarations -> declarations class_declaration .
+
+    CLASS           reduce using rule 2 (declarations -> declarations class_declaration .)
+    DEF             reduce using rule 2 (declarations -> declarations class_declaration .)
+    $end            reduce using rule 2 (declarations -> declarations class_declaration .)
+    DEDENT          reduce using rule 2 (declarations -> declarations class_declaration .)
+
+
+state 5
+
+    (3) declarations -> declarations function_declaration .
+
+    CLASS           reduce using rule 3 (declarations -> declarations function_declaration .)
+    DEF             reduce using rule 3 (declarations -> declarations function_declaration .)
+    $end            reduce using rule 3 (declarations -> declarations function_declaration .)
+    DEDENT          reduce using rule 3 (declarations -> declarations function_declaration .)
+
+
+state 6
+
+    (5) class_declaration -> CLASS . IDENTIFIER COLON NEWLINE INDENT declarations DEDENT
+
+    IDENTIFIER      shift and go to state 8
+
+
+state 7
+
+    (6) function_declaration -> DEF . IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT
+
+    IDENTIFIER      shift and go to state 9
+
+
+state 8
+
+    (5) class_declaration -> CLASS IDENTIFIER . COLON NEWLINE INDENT declarations DEDENT
+
+    COLON           shift and go to state 10
+
+
+state 9
+
+    (6) function_declaration -> DEF IDENTIFIER . LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT
+
+    LPAREN          shift and go to state 11
+
+
+state 10
+
+    (5) class_declaration -> CLASS IDENTIFIER COLON . NEWLINE INDENT declarations DEDENT
+
+    NEWLINE         shift and go to state 12
+
+
+state 11
+
+    (6) function_declaration -> DEF IDENTIFIER LPAREN . parameters RPAREN COLON NEWLINE INDENT declarations DEDENT
+    (7) parameters -> . parameters COMMA IDENTIFIER
+    (8) parameters -> . IDENTIFIER
+    (9) parameters -> . empty
+    (10) empty -> .
+
+    IDENTIFIER      shift and go to state 13
+    RPAREN          reduce using rule 10 (empty -> .)
+    COMMA           reduce using rule 10 (empty -> .)
+
+    parameters                     shift and go to state 14
+    empty                          shift and go to state 15
+
+state 12
+
+    (5) class_declaration -> CLASS IDENTIFIER COLON NEWLINE . INDENT declarations DEDENT
+
+    INDENT          shift and go to state 16
+
+
+state 13
+
+    (8) parameters -> IDENTIFIER .
+
+    RPAREN          reduce using rule 8 (parameters -> IDENTIFIER .)
+    COMMA           reduce using rule 8 (parameters -> IDENTIFIER .)
+
+
+state 14
+
+    (6) function_declaration -> DEF IDENTIFIER LPAREN parameters . RPAREN COLON NEWLINE INDENT declarations DEDENT
+    (7) parameters -> parameters . COMMA IDENTIFIER
+
+    RPAREN          shift and go to state 17
+    COMMA           shift and go to state 18
+
+
+state 15
+
+    (9) parameters -> empty .
+
+    RPAREN          reduce using rule 9 (parameters -> empty .)
+    COMMA           reduce using rule 9 (parameters -> empty .)
+
+
+state 16
+
+    (5) class_declaration -> CLASS IDENTIFIER COLON NEWLINE INDENT . declarations DEDENT
+    (2) declarations -> . declarations class_declaration
+    (3) declarations -> . declarations function_declaration
+    (4) declarations -> . empty
+    (10) empty -> .
+
+    DEDENT          reduce using rule 10 (empty -> .)
+    CLASS           reduce using rule 10 (empty -> .)
+    DEF             reduce using rule 10 (empty -> .)
+
+    declarations                   shift and go to state 19
+    empty                          shift and go to state 3
+
+state 17
+
+    (6) function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN . COLON NEWLINE INDENT declarations DEDENT
+
+    COLON           shift and go to state 20
+
+
+state 18
+
+    (7) parameters -> parameters COMMA . IDENTIFIER
+
+    IDENTIFIER      shift and go to state 21
+
+
+state 19
+
+    (5) class_declaration -> CLASS IDENTIFIER COLON NEWLINE INDENT declarations . DEDENT
+    (2) declarations -> declarations . class_declaration
+    (3) declarations -> declarations . function_declaration
+    (5) class_declaration -> . CLASS IDENTIFIER COLON NEWLINE INDENT declarations DEDENT
+    (6) function_declaration -> . DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT
+
+    DEDENT          shift and go to state 22
+    CLASS           shift and go to state 6
+    DEF             shift and go to state 7
+
+    class_declaration              shift and go to state 4
+    function_declaration           shift and go to state 5
+
+state 20
+
+    (6) function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN COLON . NEWLINE INDENT declarations DEDENT
+
+    NEWLINE         shift and go to state 23
+
+
+state 21
+
+    (7) parameters -> parameters COMMA IDENTIFIER .
+
+    RPAREN          reduce using rule 7 (parameters -> parameters COMMA IDENTIFIER .)
+    COMMA           reduce using rule 7 (parameters -> parameters COMMA IDENTIFIER .)
+
+
+state 22
+
+    (5) class_declaration -> CLASS IDENTIFIER COLON NEWLINE INDENT declarations DEDENT .
+
+    CLASS           reduce using rule 5 (class_declaration -> CLASS IDENTIFIER COLON NEWLINE INDENT declarations DEDENT .)
+    DEF             reduce using rule 5 (class_declaration -> CLASS IDENTIFIER COLON NEWLINE INDENT declarations DEDENT .)
+    $end            reduce using rule 5 (class_declaration -> CLASS IDENTIFIER COLON NEWLINE INDENT declarations DEDENT .)
+    DEDENT          reduce using rule 5 (class_declaration -> CLASS IDENTIFIER COLON NEWLINE INDENT declarations DEDENT .)
+
+
+state 23
+
+    (6) function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE . INDENT declarations DEDENT
+
+    INDENT          shift and go to state 24
+
+
+state 24
+
+    (6) function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT . declarations DEDENT
+    (2) declarations -> . declarations class_declaration
+    (3) declarations -> . declarations function_declaration
+    (4) declarations -> . empty
+    (10) empty -> .
+
+    DEDENT          reduce using rule 10 (empty -> .)
+    CLASS           reduce using rule 10 (empty -> .)
+    DEF             reduce using rule 10 (empty -> .)
+
+    declarations                   shift and go to state 25
+    empty                          shift and go to state 3
+
+state 25
+
+    (6) function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations . DEDENT
+    (2) declarations -> declarations . class_declaration
+    (3) declarations -> declarations . function_declaration
+    (5) class_declaration -> . CLASS IDENTIFIER COLON NEWLINE INDENT declarations DEDENT
+    (6) function_declaration -> . DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT
+
+    DEDENT          shift and go to state 26
+    CLASS           shift and go to state 6
+    DEF             shift and go to state 7
+
+    class_declaration              shift and go to state 4
+    function_declaration           shift and go to state 5
+
+state 26
+
+    (6) function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT .
+
+    CLASS           reduce using rule 6 (function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT .)
+    DEF             reduce using rule 6 (function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT .)
+    $end            reduce using rule 6 (function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT .)
+    DEDENT          reduce using rule 6 (function_declaration -> DEF IDENTIFIER LPAREN parameters RPAREN COLON NEWLINE INDENT declarations DEDENT .)
+
