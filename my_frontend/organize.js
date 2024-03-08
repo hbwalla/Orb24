@@ -1,10 +1,8 @@
-var file = "/Users/haileywallace/Desktop/orb_dev/Orb24/my_frontend/text.txt"
+const sample = require("./output.json");
 
-const fs = require('fs')
+firstArg = JSON.stringify(sample.vector.methods.__init__.arguments[0]);
 
-fs.readFile(file, (err, data) => {
-    if (err) throw err;
-    console.log(data.toString());
-});
 
-// want to use JSON.parse() for this! Have to put text file in JSON format
+
+
+
