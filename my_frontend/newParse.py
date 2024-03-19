@@ -11,7 +11,7 @@ class PyFileVisitor(ast.NodeVisitor):
 
     def visit_ClassDef(self, node):
         # self.current_class = node.name
-        class_info = {"type": "class", "name": node.name, "methods": []}
+        class_info = {"type": "class", "name": node.name, "methods": {}}
         # self.result_dict[node.name] = {"type": "class", 'methods': {}} # update method?
         self.result_list.append(class_info)
         self.current_class = class_info
@@ -24,7 +24,8 @@ class PyFileVisitor(ast.NodeVisitor):
         function_info = {"type": "function", "name": node.name, 'arguments': args, 'level': self.function_nesting_level}
         if self.current_class:
             # self.result_dict[self.current_class]['methods'][node.name] = function_info
-            self.current_class["methods"].append(function_info)
+            # self.current_class["methods"].append(function_info)
+            self.current_class["methods"] = function_info
         else:
             # self.result_dict[node.name] = function_info
             self.result_list.append(function_info)

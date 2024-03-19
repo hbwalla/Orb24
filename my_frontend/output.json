@@ -2,123 +2,39 @@
     {
         "type": "class",
         "name": "vector",
-        "methods": [
-            {
-                "type": "function",
-                "name": "__init__",
-                "arguments": [
-                    "self",
-                    "i1",
-                    "j1",
-                    "k1",
-                    "l1",
-                    "i2",
-                    "j2",
-                    "k2",
-                    "l2",
-                    "i3",
-                    "j3",
-                    "k3",
-                    "l3",
-                    "i4",
-                    "j4",
-                    "k4",
-                    "l4"
-                ],
-                "level": 0
-            },
-            {
-                "type": "function",
-                "name": "testing",
-                "arguments": [
-                    "word",
-                    "attempt",
-                    "butterflies"
-                ],
-                "level": 0
-            },
-            {
-                "type": "function",
-                "name": "group",
-                "arguments": [
-                    "v"
-                ],
-                "level": 0
-            },
-            {
-                "type": "function",
-                "name": "add",
-                "arguments": [
-                    "self",
-                    "v"
-                ],
-                "level": 0
-            },
-            {
-                "type": "function",
-                "name": "subtract",
-                "arguments": [
-                    "self",
-                    "v"
-                ],
-                "level": 0
-            },
-            {
-                "type": "function",
-                "name": "length",
-                "arguments": [
-                    "self",
-                    "v"
-                ],
-                "level": 0
-            },
-            {
-                "type": "function",
-                "name": "dot",
-                "arguments": [
-                    "self",
-                    "v"
-                ],
-                "level": 0
-            },
-            {
-                "type": "function",
-                "name": "divide",
-                "arguments": [
-                    "self",
-                    "v"
-                ],
-                "level": 0
-            }
-        ]
+        "methods": {
+            "type": "function",
+            "name": "divide",
+            "arguments": [
+                "self",
+                "v"
+            ],
+            "level": 0
+        }
     },
     {
         "type": "class",
         "name": "oopa",
-        "methods": [
-            {
-                "type": "function",
-                "name": "__init__",
-                "arguments": [
-                    "self"
-                ],
-                "level": 0
-            }
-        ]
+        "methods": {
+            "type": "function",
+            "name": "__init__",
+            "arguments": [
+                "self"
+            ],
+            "level": 0
+        }
     },
     {
         "type": "class",
         "name": "boogie",
-        "methods": [
-            {
-                "type": "function",
-                "name": "__init__",
-                "arguments": [
-                    "self"
-                ],
-                "level": 0
-            }
-        ]
+        "methods": {
+            "type": "function",
+            "name": "__init__",
+            "arguments": [
+                "self"
+            ],
+            "level": 0
+        }
     },
     {
         "type": "function",
