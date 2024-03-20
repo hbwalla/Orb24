@@ -4,28 +4,24 @@ function range(start, end) {
     return Array(end - start + 1).fill().map((_, idx) => start + idx)
 };
 
-// const body = document.getElementById("body");
-// const context = body.getContext("2d");
-// context.fillStyle = "blue";
-// context.fillRect(300, 300, 300, 100);
 
-class Component {
-    constructor(width, height, document) {
-        this.width = width;
-        this.height = height;
-    };
+// class Component {
+//     constructor(width, height, document) {
+//         this.width = width;
+//         this.height = height;
+//     };
 
-    getContainer() {
-        const container = document.getElementById("container");
-        const ctx = container.getContext("2d");
-    }
+//     getContainer() {
+//         const container = document.getElementById("container");
+//         const ctx = container.getContext("2d");
+//     }
 
-    draw() {
-        const rectangle = rect(100, 100, 300, 300);
-        
-    }
+//     draw() {
+//         const rectangle = rect(100, 100, 300, 300);
+
+//     }
     
- }
+//  }
 
 var size = Object.keys(sample).length;
 
@@ -36,10 +32,10 @@ while (index < result.length) {
     var obj = JSON.stringify(sample[result[index]]["type"]);
 
     if (obj.includes("class")) {
-        console.log("success!");
+        console.log("class!");
 
     } else {
-        console.log("function!")
+        console.log("function!");
     };
     
     index++;
