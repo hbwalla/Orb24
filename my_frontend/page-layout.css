@@ -42,7 +42,7 @@ body {
     width: 658px;
     height: 40px;
     padding: 10px;
-    z-index: 9
+    z-index: 9;
 }
 
 .box {
@@ -55,3 +55,4 @@ body {
     left: 400px;
     top: 400px;
 }
+

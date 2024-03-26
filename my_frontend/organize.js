@@ -1,27 +1,16 @@
+// import {addClassToContainer} from "menu-functions";
+const my_import = require("./menu-functions.js")
+// import {addFunction} from "./menu-functions.js";
 const sample = require("./output.json");
+
 
 function range(start, end) {
     return Array(end - start + 1).fill().map((_, idx) => start + idx)
 };
 
-
-// class Component {
-//     constructor(width, height, document) {
-//         this.width = width;
-//         this.height = height;
-//     };
-
-//     getContainer() {
-//         const container = document.getElementById("container");
-//         const ctx = container.getContext("2d");
-//     }
-
-//     draw() {
-//         const rectangle = rect(100, 100, 300, 300);
-
-//     }
-    
-//  }
+// $(document).ready(function() {
+//     my_import.addClassToContainer();
+// });
 
 var size = Object.keys(sample).length;
 
@@ -33,10 +22,12 @@ while (index < result.length) {
 
     if (obj.includes("class")) {
         console.log("class!");
-
-    } else {
-        console.log("function!");
     };
-    
+        
+    if (obj.includes("function")) {
+            console.log("function!");
+            // addFunction();
+    };
+
     index++;
 };

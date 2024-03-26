@@ -7,6 +7,7 @@
 // const element = document.getElementById("container");
 // element.appendChild(box)
 
+
 $(document).ready(function() { 
     // Get the div element by its ID 
     var $div = $('<div> Testing! </div>', {id: "foo", "class": "a"}); 
@@ -14,7 +15,7 @@ $(document).ready(function() {
         "background-color": '#bcd500',
         "width": "100px",
         "height": "15px",
-        "z-index": "10",
+        "z-index": "8",
         "left": "300px",
         "top": "300px",
         "position": "fixed",
@@ -22,12 +23,19 @@ $(document).ready(function() {
         "font-family": "Arial Bold",
         "border-radius": "5px",
         "color": "#151514",
-        "padding": "10px"
+        "padding": "10px",
+        "cursor": "grab"
     });
 
-    $(function() {
-        $(".a").draggable();
-    });
+    $div.draggable();
     
     $("#container").append($div);
-  }); 
+
+    $("#container").droppable({ 
+        drop: function(event, ui) {
+            ui.draggable.css("z-index", 8);
+            ui.draggable.css("background-color", "green")
+            ui.draggable.clone()
+        }
+    });
+}); 

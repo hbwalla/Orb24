@@ -11,10 +11,6 @@
 //     });
 // });
 
-// $(function() {
-//     $("#option-class-clone").draggable({});
-// });
-
 $(function() {
     $("#option-class").draggable();
 });
@@ -67,21 +63,55 @@ $(function() {
     $("#option-tuple").draggable();
 });
 
-$("#container").droppable({
-    accept: '.class',
-    drop: function(event, ui) {
-        $(this).append($("ui.draggable").clone());
-        $("#container .class").addClass("item");
-        $(".item").removeClass("ui-draggable product");
-        $(".item").draggable({
-            containment: 'parent',
-            grid: [150, 150]
-        });
-    }
-});
-$(".class").draggable({
-    helper: 'clone'
-});
+
+export function addClassToContainer() {
+    var $class = $('<div> Class </div>', {id: "option-class-ui", "class": "class-ui"}); 
+    $class.css({
+        "background-color": '#bcd500',
+        "width": "100px",
+        "height": "15px",
+        "z-index": "8",
+        "left": "400px",
+        "top": "300px",
+        "position": "fixed",
+        "text-align": "center",
+        "font-family": "Arial Bold",
+        "border-radius": "5px",
+        "color": "#151514",
+        "padding": "10px",
+        "cursor": "grab"
+    });
+
+    $class.draggable();
+    
+    $("#container").append($class);
+
+    $("#container").droppable({ 
+        drop: function(event, ui) {
+            ui.draggable.css("z-index", 8);
+            ui.draggable.css("background-color", "green")
+            ui.draggable.clone()
+        }
+    });
+};
+
+// addClassToContainer();
+
+// $("#container").droppable({
+//     accept: '.class',
+//     drop: function(event, ui) {
+//         $(this).append($("ui.draggable").clone());
+//         $("#container .class").addClass("item");
+//         $(".item").removeClass("ui-draggable product");
+//         $(".item").draggable({
+//             containment: 'parent',
+//             grid: [150, 150]
+//         });
+//     }
+// });
+// $(".class").draggable({
+//     helper: 'clone'
+// });
 
 // const {ReactDraggable: Draggable, React, ReactDOM} = window;
 
